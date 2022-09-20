@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B604135597948CEF0B0BA46 /* Pods_DOS_Monster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE0027F3B23988006476FE7D /* Pods_DOS_Monster.framework */; };
+		29345082BB34DBC23AD92D5E /* Pods_DOS_MonsterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1F2EBAAAEAD12CE54AEBD2E /* Pods_DOS_MonsterTests.framework */; };
+		516AFF958BB3D3F96EA08612 /* Pods_DOS_Monster_DOS_MonsterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B6618C21455A27186489173 /* Pods_DOS_Monster_DOS_MonsterUITests.framework */; };
 		98F86A2B28D9962B005325AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F86A2A28D9962B005325AF /* AppDelegate.swift */; };
 		98F86A2D28D9962B005325AF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F86A2C28D9962B005325AF /* SceneDelegate.swift */; };
 		98F86A2F28D9962B005325AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F86A2E28D9962B005325AF /* ViewController.swift */; };
@@ -35,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		51B52B27631D69F8D20B2B86 /* Pods-DOS-Monster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DOS-Monster.release.xcconfig"; path = "Target Support Files/Pods-DOS-Monster/Pods-DOS-Monster.release.xcconfig"; sourceTree = "<group>"; };
+		5B6618C21455A27186489173 /* Pods_DOS_Monster_DOS_MonsterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DOS_Monster_DOS_MonsterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EA111307831C8C0606A0D52 /* Pods-DOS-MonsterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DOS-MonsterTests.debug.xcconfig"; path = "Target Support Files/Pods-DOS-MonsterTests/Pods-DOS-MonsterTests.debug.xcconfig"; sourceTree = "<group>"; };
 		98F86A2728D9962B005325AF /* DOS-Monster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DOS-Monster.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98F86A2A28D9962B005325AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98F86A2C28D9962B005325AF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +53,12 @@
 		98F86A4728D9962E005325AF /* DOS-MonsterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DOS-MonsterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98F86A4B28D9962E005325AF /* DOS_MonsterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DOS_MonsterUITests.swift; sourceTree = "<group>"; };
 		98F86A4D28D9962E005325AF /* DOS_MonsterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DOS_MonsterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A711F090BF7C10AFD9696130 /* Pods-DOS-Monster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DOS-Monster.debug.xcconfig"; path = "Target Support Files/Pods-DOS-Monster/Pods-DOS-Monster.debug.xcconfig"; sourceTree = "<group>"; };
+		B4C7D1358CD0C901A8610ABE /* Pods-DOS-Monster-DOS-MonsterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DOS-Monster-DOS-MonsterUITests.debug.xcconfig"; path = "Target Support Files/Pods-DOS-Monster-DOS-MonsterUITests/Pods-DOS-Monster-DOS-MonsterUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BE0027F3B23988006476FE7D /* Pods_DOS_Monster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DOS_Monster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1EE029B4757C6354C05A3CD /* Pods-DOS-Monster-DOS-MonsterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DOS-Monster-DOS-MonsterUITests.release.xcconfig"; path = "Target Support Files/Pods-DOS-Monster-DOS-MonsterUITests/Pods-DOS-Monster-DOS-MonsterUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D1F2EBAAAEAD12CE54AEBD2E /* Pods_DOS_MonsterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DOS_MonsterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEB3CE32743358227A99071C /* Pods-DOS-MonsterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DOS-MonsterTests.release.xcconfig"; path = "Target Support Files/Pods-DOS-MonsterTests/Pods-DOS-MonsterTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B604135597948CEF0B0BA46 /* Pods_DOS_Monster.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29345082BB34DBC23AD92D5E /* Pods_DOS_MonsterTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				516AFF958BB3D3F96EA08612 /* Pods_DOS_Monster_DOS_MonsterUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +96,8 @@
 				98F86A4028D9962E005325AF /* DOS-MonsterTests */,
 				98F86A4A28D9962E005325AF /* DOS-MonsterUITests */,
 				98F86A2828D9962B005325AF /* Products */,
+				E46931C8516A7288951FDE5C /* Pods */,
+				E92B52A4332089252BCAABAD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,6 +141,29 @@
 			path = "DOS-MonsterUITests";
 			sourceTree = "<group>";
 		};
+		E46931C8516A7288951FDE5C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A711F090BF7C10AFD9696130 /* Pods-DOS-Monster.debug.xcconfig */,
+				51B52B27631D69F8D20B2B86 /* Pods-DOS-Monster.release.xcconfig */,
+				B4C7D1358CD0C901A8610ABE /* Pods-DOS-Monster-DOS-MonsterUITests.debug.xcconfig */,
+				D1EE029B4757C6354C05A3CD /* Pods-DOS-Monster-DOS-MonsterUITests.release.xcconfig */,
+				6EA111307831C8C0606A0D52 /* Pods-DOS-MonsterTests.debug.xcconfig */,
+				FEB3CE32743358227A99071C /* Pods-DOS-MonsterTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E92B52A4332089252BCAABAD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE0027F3B23988006476FE7D /* Pods_DOS_Monster.framework */,
+				5B6618C21455A27186489173 /* Pods_DOS_Monster_DOS_MonsterUITests.framework */,
+				D1F2EBAAAEAD12CE54AEBD2E /* Pods_DOS_MonsterTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -131,9 +171,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 98F86A5128D9962E005325AF /* Build configuration list for PBXNativeTarget "DOS-Monster" */;
 			buildPhases = (
+				2B2A246315D4D5A61C6F1C81 /* [CP] Check Pods Manifest.lock */,
 				98F86A2328D9962B005325AF /* Sources */,
 				98F86A2428D9962B005325AF /* Frameworks */,
 				98F86A2528D9962B005325AF /* Resources */,
+				98F86A5A28D99958005325AF /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -148,6 +190,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 98F86A5428D9962E005325AF /* Build configuration list for PBXNativeTarget "DOS-MonsterTests" */;
 			buildPhases = (
+				4402B0F43E819BCA2D2132EA /* [CP] Check Pods Manifest.lock */,
 				98F86A3928D9962E005325AF /* Sources */,
 				98F86A3A28D9962E005325AF /* Frameworks */,
 				98F86A3B28D9962E005325AF /* Resources */,
@@ -166,6 +209,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 98F86A5728D9962E005325AF /* Build configuration list for PBXNativeTarget "DOS-MonsterUITests" */;
 			buildPhases = (
+				5AB7C343FB1F0ECC114DC1BA /* [CP] Check Pods Manifest.lock */,
 				98F86A4328D9962E005325AF /* Sources */,
 				98F86A4428D9962E005325AF /* Frameworks */,
 				98F86A4528D9962E005325AF /* Resources */,
@@ -248,6 +292,92 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B2A246315D4D5A61C6F1C81 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DOS-Monster-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4402B0F43E819BCA2D2132EA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DOS-MonsterTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5AB7C343FB1F0ECC114DC1BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DOS-Monster-DOS-MonsterUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98F86A5A28D99958005325AF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		98F86A2328D9962B005325AF /* Sources */ = {
@@ -420,6 +550,7 @@
 		};
 		98F86A5228D9962E005325AF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A711F090BF7C10AFD9696130 /* Pods-DOS-Monster.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -447,6 +578,7 @@
 		};
 		98F86A5328D9962E005325AF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51B52B27631D69F8D20B2B86 /* Pods-DOS-Monster.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -474,6 +606,7 @@
 		};
 		98F86A5528D9962E005325AF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EA111307831C8C0606A0D52 /* Pods-DOS-MonsterTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +626,7 @@
 		};
 		98F86A5628D9962E005325AF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEB3CE32743358227A99071C /* Pods-DOS-MonsterTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +646,7 @@
 		};
 		98F86A5828D9962E005325AF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4C7D1358CD0C901A8610ABE /* Pods-DOS-Monster-DOS-MonsterUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -529,6 +664,7 @@
 		};
 		98F86A5928D9962E005325AF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1EE029B4757C6354C05A3CD /* Pods-DOS-Monster-DOS-MonsterUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
