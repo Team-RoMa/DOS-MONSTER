@@ -14,8 +14,31 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
+        let tabbarController = UITabBarController()
+        tabbarController.tabBar.backgroundColor = .systemGray4
+        tabbarController.tabBar.tintColor = .black
+        tabbarController.tabBar.isTranslucent = false
+        
+        let appearance = UITabBarItem.appearance()
+        let attributes = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 20)]
+        appearance.setTitleTextAttributes(attributes as [NSAttributedString.Key: Any], for: .normal)
+        
         let mainViewController = ViewController()
-        window?.rootViewController = mainViewController
+        mainViewController.title = "Home"
+        let gameViewController = GameViewController()
+        gameViewController.title = "Game"
+        
+        tabbarController.setViewControllers([mainViewController, gameViewController], animated: false)
+        
+        window?.rootViewController = tabbarController
         window?.makeKeyAndVisible()
+    }
+}
+
+// MARK: - GameViewController
+class GameViewController: UIViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = .orange
     }
 }
