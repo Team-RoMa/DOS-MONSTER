@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		1B604135597948CEF0B0BA46 /* Pods_DOS_Monster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE0027F3B23988006476FE7D /* Pods_DOS_Monster.framework */; };
+		1EF314F228E2FAC900207E1C /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF314F128E2FAC900207E1C /* Logger.swift */; };
+		1EF314F528E2FB1D00207E1C /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF314F428E2FB1D00207E1C /* Date+Extension.swift */; };
+		1EF314F928E2FB5200207E1C /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF314F828E2FB5200207E1C /* Food.swift */; };
+		1EF314FB28E2FB5C00207E1C /* Behavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF314FA28E2FB5C00207E1C /* Behavior.swift */; };
+		1EF314FD28E2FB6A00207E1C /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF314FC28E2FB6A00207E1C /* Pet.swift */; };
+		1EF314FF28E2FB8900207E1C /* LevelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF314FE28E2FB8900207E1C /* LevelType.swift */; };
+		1EF3150228E2FBCB00207E1C /* PetResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF3150128E2FBCB00207E1C /* PetResponse.swift */; };
+		1EF3150528E2FC2C00207E1C /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF3150428E2FC2C00207E1C /* Constant.swift */; };
+		1EF3150928E3029600207E1C /* DOS_MonsterPetTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF3150828E3029600207E1C /* DOS_MonsterPetTest.swift */; };
 		29345082BB34DBC23AD92D5E /* Pods_DOS_MonsterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1F2EBAAAEAD12CE54AEBD2E /* Pods_DOS_MonsterTests.framework */; };
 		516AFF958BB3D3F96EA08612 /* Pods_DOS_Monster_DOS_MonsterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B6618C21455A27186489173 /* Pods_DOS_Monster_DOS_MonsterUITests.framework */; };
 		98F86A2B28D9962B005325AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F86A2A28D9962B005325AF /* AppDelegate.swift */; };
@@ -38,6 +47,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1EF314F128E2FAC900207E1C /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		1EF314F428E2FB1D00207E1C /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		1EF314F828E2FB5200207E1C /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		1EF314FA28E2FB5C00207E1C /* Behavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Behavior.swift; sourceTree = "<group>"; };
+		1EF314FC28E2FB6A00207E1C /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
+		1EF314FE28E2FB8900207E1C /* LevelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelType.swift; sourceTree = "<group>"; };
+		1EF3150128E2FBCB00207E1C /* PetResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetResponse.swift; sourceTree = "<group>"; };
+		1EF3150428E2FC2C00207E1C /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		1EF3150828E3029600207E1C /* DOS_MonsterPetTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DOS_MonsterPetTest.swift; sourceTree = "<group>"; };
 		51B52B27631D69F8D20B2B86 /* Pods-DOS-Monster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DOS-Monster.release.xcconfig"; path = "Target Support Files/Pods-DOS-Monster/Pods-DOS-Monster.release.xcconfig"; sourceTree = "<group>"; };
 		5B6618C21455A27186489173 /* Pods_DOS_Monster_DOS_MonsterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DOS_Monster_DOS_MonsterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EA111307831C8C0606A0D52 /* Pods-DOS-MonsterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DOS-MonsterTests.debug.xcconfig"; path = "Target Support Files/Pods-DOS-MonsterTests/Pods-DOS-MonsterTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -89,6 +107,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1EF314F028E2FABA00207E1C /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				1EF314F128E2FAC900207E1C /* Logger.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		1EF314F328E2FAF300207E1C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1EF314F428E2FB1D00207E1C /* Date+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		1EF314F628E2FB2300207E1C /* Pet */ = {
+			isa = PBXGroup;
+			children = (
+				1EF3150028E2FB9B00207E1C /* Level */,
+				1EF314F728E2FB4A00207E1C /* Interaction */,
+				1EF314FC28E2FB6A00207E1C /* Pet.swift */,
+				1EF3150128E2FBCB00207E1C /* PetResponse.swift */,
+			);
+			path = Pet;
+			sourceTree = "<group>";
+		};
+		1EF314F728E2FB4A00207E1C /* Interaction */ = {
+			isa = PBXGroup;
+			children = (
+				1EF314F828E2FB5200207E1C /* Food.swift */,
+				1EF314FA28E2FB5C00207E1C /* Behavior.swift */,
+			);
+			path = Interaction;
+			sourceTree = "<group>";
+		};
+		1EF3150028E2FB9B00207E1C /* Level */ = {
+			isa = PBXGroup;
+			children = (
+				1EF314FE28E2FB8900207E1C /* LevelType.swift */,
+			);
+			path = Level;
+			sourceTree = "<group>";
+		};
+		1EF3150328E2FC2000207E1C /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				1EF3150428E2FC2C00207E1C /* Constant.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
 		98F86A1E28D9962B005325AF = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +184,10 @@
 		98F86A2928D9962B005325AF /* DOS-Monster */ = {
 			isa = PBXGroup;
 			children = (
+				1EF3150328E2FC2000207E1C /* Constant */,
+				1EF314F028E2FABA00207E1C /* Util */,
+				1EF314F328E2FAF300207E1C /* Extension */,
+				1EF314F628E2FB2300207E1C /* Pet */,
 				98F86A2A28D9962B005325AF /* AppDelegate.swift */,
 				98F86A2C28D9962B005325AF /* SceneDelegate.swift */,
 				98F86A2E28D9962B005325AF /* ViewController.swift */,
@@ -128,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				98F86A4128D9962E005325AF /* DOS_MonsterTests.swift */,
+				1EF3150828E3029600207E1C /* DOS_MonsterPetTest.swift */,
 			);
 			path = "DOS-MonsterTests";
 			sourceTree = "<group>";
@@ -384,9 +459,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EF314F528E2FB1D00207E1C /* Date+Extension.swift in Sources */,
 				98F86A2F28D9962B005325AF /* ViewController.swift in Sources */,
 				98F86A2B28D9962B005325AF /* AppDelegate.swift in Sources */,
+				1EF314FF28E2FB8900207E1C /* LevelType.swift in Sources */,
 				98F86A2D28D9962B005325AF /* SceneDelegate.swift in Sources */,
+				1EF314F228E2FAC900207E1C /* Logger.swift in Sources */,
+				1EF3150228E2FBCB00207E1C /* PetResponse.swift in Sources */,
+				1EF314FD28E2FB6A00207E1C /* Pet.swift in Sources */,
+				1EF3150528E2FC2C00207E1C /* Constant.swift in Sources */,
+				1EF314F928E2FB5200207E1C /* Food.swift in Sources */,
+				1EF314FB28E2FB5C00207E1C /* Behavior.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +478,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				98F86A4228D9962E005325AF /* DOS_MonsterTests.swift in Sources */,
+				1EF3150928E3029600207E1C /* DOS_MonsterPetTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
