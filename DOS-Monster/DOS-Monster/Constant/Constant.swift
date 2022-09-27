@@ -7,6 +7,10 @@
 
 import Foundation
 
-enum Constant {
-    static let startLevel: Int = 1
+enum LevelConstant {
+    static let start: Int = 1
+}
+
+enum FontNameConstant {
+    static let dungGeunMo = "DungGeunMo"
 }
