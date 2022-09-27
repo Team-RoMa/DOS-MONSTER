@@ -8,10 +8,20 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    let pet = Pet(name: "임의의 펫이름")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = ColorPalette.background
+        
+        pet.updateSatietyLevel { satietyLevel in
+            satietyFigureLabel.text = "\(satietyLevel)"
+        }
+        
+        pet.updateClosenessLevel { closenessLevel in
+            satietyFigureLabel.text = "\(closenessLevel)"
+        }
         
         setupViews()
     }
@@ -121,7 +131,7 @@ system> "진돌이" 에게 밥을 주었습니다
     
     private let moodLabel: UILabel = {
         let label = UILabel()
-        label.text = "상태"
+        label.text = "친밀도"
         label.textColor = ColorPalette.accent
         label.translatesAutoresizingMaskIntoConstraints = false
         return label

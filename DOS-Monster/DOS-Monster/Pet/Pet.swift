@@ -9,7 +9,7 @@ import Foundation
 
 struct Pet {
     var name: String
-    private var level: Int = Constant.startLevel
+    private var level: Int = LevelConstant.start
     private var satietyLevel: SatietyLevel = .moderate
     private var closenessLevel: ClosenessLevel = .awkward
     
@@ -56,6 +56,14 @@ struct Pet {
             closenessLevel = newLevel
             return .up(increase: increase, newLevel: newLevel.rawValue)
         }
+    }
+    
+    func updateSatietyLevel(_ closure: (Int) -> Void) {
+        closure(satietyLevel.rawValue)
+    }
+    
+    func updateClosenessLevel(_ closure: (Int) -> Void) {
+        closure(closenessLevel.rawValue)
     }
 }
 
