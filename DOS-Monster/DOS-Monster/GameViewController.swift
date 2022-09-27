@@ -43,6 +43,7 @@ class GameViewController: UIViewController {
         textfield.placeholder = "score 입력"
         textfield.keyboardType = .numberPad
         textfield.backgroundColor = .white
+        textfield.textColor = .black
         return textfield
     }()
     

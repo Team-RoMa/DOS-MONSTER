@@ -7,15 +7,20 @@
 
 import UIKit
 
+// MARK: - 공통 컬러
+struct ColorPalette {
+    static let background = UIColor(named: "BackgroundColor")
+    static let accent = UIColor(named: "AccentColor")
+    static let panelBackground = UIColor(named: "PanelBackgroundColor")
+    static let panelContents = UIColor(named: "PanelContentsColor")
+}
+
+
 class ViewController: UIViewController {
 
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .lightContent
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .black
+        view.backgroundColor = ColorPalette.background
         
         setupViews()
     }
@@ -78,7 +83,7 @@ class ViewController: UIViewController {
         let attributes = [
             NSAttributedString.Key.paragraphStyle: style,
             NSAttributedString.Key.font: UIFont.systemFont(ofSize: 16),
-            NSAttributedString.Key.foregroundColor: UIColor.white
+            NSAttributedString.Key.foregroundColor: ColorPalette.panelContents
         ]
         textView.typingAttributes = attributes
         textView.attributedText = NSAttributedString(string: text, attributes: attributes)
@@ -92,7 +97,7 @@ class ViewController: UIViewController {
 
     private let logBackgroundView: UIView = {
         let view = UIView()
-        view.backgroundColor = UIColor(red: 32/255, green: 30/255, blue: 119/255, alpha: 1.0)
+        view.backgroundColor = ColorPalette.panelBackground
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -102,7 +107,7 @@ class ViewController: UIViewController {
         label.text = """
 system> "진돌이" 에게 밥을 주었습니다
 """
-        label.textColor = .white
+        label.textColor = ColorPalette.accent
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -110,7 +115,7 @@ system> "진돌이" 에게 밥을 주었습니다
     private let dateLabel: UILabel = {
         let label = UILabel()
         label.text = "날짜"
-        label.textColor = .white
+        label.textColor = ColorPalette.accent
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -118,7 +123,7 @@ system> "진돌이" 에게 밥을 주었습니다
     private let dateCountLabel: UILabel = {
         let label = UILabel()
         label.text = "99"
-        label.textColor = .white
+        label.textColor = ColorPalette.accent
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -126,7 +131,7 @@ system> "진돌이" 에게 밥을 주었습니다
     private let moodLabel: UILabel = {
         let label = UILabel()
         label.text = "상태"
-        label.textColor = .white
+        label.textColor = ColorPalette.accent
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -134,7 +139,7 @@ system> "진돌이" 에게 밥을 주었습니다
     private let moodFigureLabel: UILabel = {
         let label = UILabel()
         label.text = "0"
-        label.textColor = .white
+        label.textColor = ColorPalette.accent
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -142,7 +147,7 @@ system> "진돌이" 에게 밥을 주었습니다
     private let satietyLabel: UILabel = {
         let label = UILabel()
         label.text = "포만감"
-        label.textColor = .white
+        label.textColor = ColorPalette.accent
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -150,7 +155,7 @@ system> "진돌이" 에게 밥을 주었습니다
     private let satietyFigureLabel: UILabel = {
         let label = UILabel()
         label.text = "5"
-        label.textColor = .white
+        label.textColor = ColorPalette.accent
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
