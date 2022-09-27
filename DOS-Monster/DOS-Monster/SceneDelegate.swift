@@ -38,15 +38,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 }
 
-// MARK: - GameViewController
-class GameViewController: UIViewController {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .orange
-    }
-}
-
-
 // MARK: - Font
 struct AppFontName {
   static let regular = "DungGeunMo"
