@@ -1,0 +1,829 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B604135597948CEF0B0BA46 /* Pods_DOS_Monster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE0027F3B23988006476FE7D /* Pods_DOS_Monster.framework */; };
+		1EF314F228E2FAC900207E1C /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF314F128E2FAC900207E1C /* Logger.swift */; };
+		1EF314F528E2FB1D00207E1C /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF314F428E2FB1D00207E1C /* Date+Extension.swift */; };
+		1EF314F928E2FB5200207E1C /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF314F828E2FB5200207E1C /* Food.swift */; };
+		1EF314FB28E2FB5C00207E1C /* Behavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF314FA28E2FB5C00207E1C /* Behavior.swift */; };
+		1EF314FD28E2FB6A00207E1C /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF314FC28E2FB6A00207E1C /* Pet.swift */; };
+		1EF314FF28E2FB8900207E1C /* LevelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF314FE28E2FB8900207E1C /* LevelType.swift */; };
+		1EF3150228E2FBCB00207E1C /* PetResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF3150128E2FBCB00207E1C /* PetResponse.swift */; };
+		1EF3150528E2FC2C00207E1C /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF3150428E2FC2C00207E1C /* Constant.swift */; };
+		1EF3150928E3029600207E1C /* DOS_MonsterPetTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF3150828E3029600207E1C /* DOS_MonsterPetTest.swift */; };
+		29345082BB34DBC23AD92D5E /* Pods_DOS_MonsterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1F2EBAAAEAD12CE54AEBD2E /* Pods_DOS_MonsterTests.framework */; };
+		516AFF958BB3D3F96EA08612 /* Pods_DOS_Monster_DOS_MonsterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B6618C21455A27186489173 /* Pods_DOS_Monster_DOS_MonsterUITests.framework */; };
+		9813C8CB28DAB48100FDD8F9 /* DungGeunMo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9813C8CA28DAB48000FDD8F9 /* DungGeunMo.ttf */; };
+		981A1F2528E2D1F0009232C6 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981A1F2428E2D1F0009232C6 /* GameViewController.swift */; };
+		98F86A2B28D9962B005325AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F86A2A28D9962B005325AF /* AppDelegate.swift */; };
+		98F86A2D28D9962B005325AF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F86A2C28D9962B005325AF /* SceneDelegate.swift */; };
+		98F86A2F28D9962B005325AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F86A2E28D9962B005325AF /* ViewController.swift */; };
+		98F86A3428D9962E005325AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98F86A3328D9962E005325AF /* Assets.xcassets */; };
+		98F86A3728D9962E005325AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98F86A3528D9962E005325AF /* LaunchScreen.storyboard */; };
+		98F86A4228D9962E005325AF /* DOS_MonsterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F86A4128D9962E005325AF /* DOS_MonsterTests.swift */; };
+		98F86A4C28D9962E005325AF /* DOS_MonsterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F86A4B28D9962E005325AF /* DOS_MonsterUITests.swift */; };
+		98F86A4E28D9962E005325AF /* DOS_MonsterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F86A4D28D9962E005325AF /* DOS_MonsterUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		98F86A3E28D9962E005325AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98F86A1F28D9962B005325AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98F86A2628D9962B005325AF;
+			remoteInfo = "DOS-Monster";
+		};
+		98F86A4828D9962E005325AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98F86A1F28D9962B005325AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98F86A2628D9962B005325AF;
+			remoteInfo = "DOS-Monster";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1EF314F128E2FAC900207E1C /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		1EF314F428E2FB1D00207E1C /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		1EF314F828E2FB5200207E1C /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		1EF314FA28E2FB5C00207E1C /* Behavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Behavior.swift; sourceTree = "<group>"; };
+		1EF314FC28E2FB6A00207E1C /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
+		1EF314FE28E2FB8900207E1C /* LevelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelType.swift; sourceTree = "<group>"; };
+		1EF3150128E2FBCB00207E1C /* PetResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetResponse.swift; sourceTree = "<group>"; };
+		1EF3150428E2FC2C00207E1C /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		1EF3150828E3029600207E1C /* DOS_MonsterPetTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DOS_MonsterPetTest.swift; sourceTree = "<group>"; };
+		51B52B27631D69F8D20B2B86 /* Pods-DOS-Monster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DOS-Monster.release.xcconfig"; path = "Target Support Files/Pods-DOS-Monster/Pods-DOS-Monster.release.xcconfig"; sourceTree = "<group>"; };
+		5B6618C21455A27186489173 /* Pods_DOS_Monster_DOS_MonsterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DOS_Monster_DOS_MonsterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EA111307831C8C0606A0D52 /* Pods-DOS-MonsterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DOS-MonsterTests.debug.xcconfig"; path = "Target Support Files/Pods-DOS-MonsterTests/Pods-DOS-MonsterTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9813C8CA28DAB48000FDD8F9 /* DungGeunMo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DungGeunMo.ttf; sourceTree = "<group>"; };
+		981A1F2428E2D1F0009232C6 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		98F86A2728D9962B005325AF /* DOS-Monster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DOS-Monster.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		98F86A2A28D9962B005325AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		98F86A2C28D9962B005325AF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		98F86A2E28D9962B005325AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		98F86A3328D9962E005325AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		98F86A3628D9962E005325AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		98F86A3828D9962E005325AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98F86A3D28D9962E005325AF /* DOS-MonsterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DOS-MonsterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		98F86A4128D9962E005325AF /* DOS_MonsterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DOS_MonsterTests.swift; sourceTree = "<group>"; };
+		98F86A4728D9962E005325AF /* DOS-MonsterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DOS-MonsterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		98F86A4B28D9962E005325AF /* DOS_MonsterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DOS_MonsterUITests.swift; sourceTree = "<group>"; };
+		98F86A4D28D9962E005325AF /* DOS_MonsterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DOS_MonsterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A711F090BF7C10AFD9696130 /* Pods-DOS-Monster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DOS-Monster.debug.xcconfig"; path = "Target Support Files/Pods-DOS-Monster/Pods-DOS-Monster.debug.xcconfig"; sourceTree = "<group>"; };
+		B4C7D1358CD0C901A8610ABE /* Pods-DOS-Monster-DOS-MonsterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DOS-Monster-DOS-MonsterUITests.debug.xcconfig"; path = "Target Support Files/Pods-DOS-Monster-DOS-MonsterUITests/Pods-DOS-Monster-DOS-MonsterUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BE0027F3B23988006476FE7D /* Pods_DOS_Monster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DOS_Monster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1EE029B4757C6354C05A3CD /* Pods-DOS-Monster-DOS-MonsterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DOS-Monster-DOS-MonsterUITests.release.xcconfig"; path = "Target Support Files/Pods-DOS-Monster-DOS-MonsterUITests/Pods-DOS-Monster-DOS-MonsterUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D1F2EBAAAEAD12CE54AEBD2E /* Pods_DOS_MonsterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DOS_MonsterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEB3CE32743358227A99071C /* Pods-DOS-MonsterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DOS-MonsterTests.release.xcconfig"; path = "Target Support Files/Pods-DOS-MonsterTests/Pods-DOS-MonsterTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		98F86A2428D9962B005325AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B604135597948CEF0B0BA46 /* Pods_DOS_Monster.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98F86A3A28D9962E005325AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29345082BB34DBC23AD92D5E /* Pods_DOS_MonsterTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98F86A4428D9962E005325AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				516AFF958BB3D3F96EA08612 /* Pods_DOS_Monster_DOS_MonsterUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1EF314F028E2FABA00207E1C /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				1EF314F128E2FAC900207E1C /* Logger.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		1EF314F328E2FAF300207E1C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1EF314F428E2FB1D00207E1C /* Date+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		1EF314F628E2FB2300207E1C /* Pet */ = {
+			isa = PBXGroup;
+			children = (
+				1EF3150028E2FB9B00207E1C /* Level */,
+				1EF314F728E2FB4A00207E1C /* Interaction */,
+				1EF314FC28E2FB6A00207E1C /* Pet.swift */,
+				1EF3150128E2FBCB00207E1C /* PetResponse.swift */,
+			);
+			path = Pet;
+			sourceTree = "<group>";
+		};
+		1EF314F728E2FB4A00207E1C /* Interaction */ = {
+			isa = PBXGroup;
+			children = (
+				1EF314F828E2FB5200207E1C /* Food.swift */,
+				1EF314FA28E2FB5C00207E1C /* Behavior.swift */,
+			);
+			path = Interaction;
+			sourceTree = "<group>";
+		};
+		1EF3150028E2FB9B00207E1C /* Level */ = {
+			isa = PBXGroup;
+			children = (
+				1EF314FE28E2FB8900207E1C /* LevelType.swift */,
+			);
+			path = Level;
+			sourceTree = "<group>";
+		};
+		1EF3150328E2FC2000207E1C /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				1EF3150428E2FC2C00207E1C /* Constant.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		98F86A1E28D9962B005325AF = {
+			isa = PBXGroup;
+			children = (
+				98F86A2928D9962B005325AF /* DOS-Monster */,
+				98F86A4028D9962E005325AF /* DOS-MonsterTests */,
+				98F86A4A28D9962E005325AF /* DOS-MonsterUITests */,
+				98F86A2828D9962B005325AF /* Products */,
+				E46931C8516A7288951FDE5C /* Pods */,
+				E92B52A4332089252BCAABAD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		98F86A2828D9962B005325AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				98F86A2728D9962B005325AF /* DOS-Monster.app */,
+				98F86A3D28D9962E005325AF /* DOS-MonsterTests.xctest */,
+				98F86A4728D9962E005325AF /* DOS-MonsterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		98F86A2928D9962B005325AF /* DOS-Monster */ = {
+			isa = PBXGroup;
+			children = (
+<<<<<<< HEAD
+				1EF3150328E2FC2000207E1C /* Constant */,
+				1EF314F028E2FABA00207E1C /* Util */,
+				1EF314F328E2FAF300207E1C /* Extension */,
+				1EF314F628E2FB2300207E1C /* Pet */,
+=======
+				9813C8CA28DAB48000FDD8F9 /* DungGeunMo.ttf */,
+>>>>>>> DOS-2-main-uiux
+				98F86A2A28D9962B005325AF /* AppDelegate.swift */,
+				98F86A2C28D9962B005325AF /* SceneDelegate.swift */,
+				98F86A2E28D9962B005325AF /* ViewController.swift */,
+				981A1F2428E2D1F0009232C6 /* GameViewController.swift */,
+				98F86A3328D9962E005325AF /* Assets.xcassets */,
+				98F86A3528D9962E005325AF /* LaunchScreen.storyboard */,
+				98F86A3828D9962E005325AF /* Info.plist */,
+			);
+			path = "DOS-Monster";
+			sourceTree = "<group>";
+		};
+		98F86A4028D9962E005325AF /* DOS-MonsterTests */ = {
+			isa = PBXGroup;
+			children = (
+				98F86A4128D9962E005325AF /* DOS_MonsterTests.swift */,
+				1EF3150828E3029600207E1C /* DOS_MonsterPetTest.swift */,
+			);
+			path = "DOS-MonsterTests";
+			sourceTree = "<group>";
+		};
+		98F86A4A28D9962E005325AF /* DOS-MonsterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				98F86A4B28D9962E005325AF /* DOS_MonsterUITests.swift */,
+				98F86A4D28D9962E005325AF /* DOS_MonsterUITestsLaunchTests.swift */,
+			);
+			path = "DOS-MonsterUITests";
+			sourceTree = "<group>";
+		};
+		E46931C8516A7288951FDE5C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A711F090BF7C10AFD9696130 /* Pods-DOS-Monster.debug.xcconfig */,
+				51B52B27631D69F8D20B2B86 /* Pods-DOS-Monster.release.xcconfig */,
+				B4C7D1358CD0C901A8610ABE /* Pods-DOS-Monster-DOS-MonsterUITests.debug.xcconfig */,
+				D1EE029B4757C6354C05A3CD /* Pods-DOS-Monster-DOS-MonsterUITests.release.xcconfig */,
+				6EA111307831C8C0606A0D52 /* Pods-DOS-MonsterTests.debug.xcconfig */,
+				FEB3CE32743358227A99071C /* Pods-DOS-MonsterTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E92B52A4332089252BCAABAD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE0027F3B23988006476FE7D /* Pods_DOS_Monster.framework */,
+				5B6618C21455A27186489173 /* Pods_DOS_Monster_DOS_MonsterUITests.framework */,
+				D1F2EBAAAEAD12CE54AEBD2E /* Pods_DOS_MonsterTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		98F86A2628D9962B005325AF /* DOS-Monster */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98F86A5128D9962E005325AF /* Build configuration list for PBXNativeTarget "DOS-Monster" */;
+			buildPhases = (
+				2B2A246315D4D5A61C6F1C81 /* [CP] Check Pods Manifest.lock */,
+				98F86A2328D9962B005325AF /* Sources */,
+				98F86A2428D9962B005325AF /* Frameworks */,
+				98F86A2528D9962B005325AF /* Resources */,
+				98F86A5A28D99958005325AF /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DOS-Monster";
+			productName = "DOS-Monster";
+			productReference = 98F86A2728D9962B005325AF /* DOS-Monster.app */;
+			productType = "com.apple.product-type.application";
+		};
+		98F86A3C28D9962E005325AF /* DOS-MonsterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98F86A5428D9962E005325AF /* Build configuration list for PBXNativeTarget "DOS-MonsterTests" */;
+			buildPhases = (
+				4402B0F43E819BCA2D2132EA /* [CP] Check Pods Manifest.lock */,
+				98F86A3928D9962E005325AF /* Sources */,
+				98F86A3A28D9962E005325AF /* Frameworks */,
+				98F86A3B28D9962E005325AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98F86A3F28D9962E005325AF /* PBXTargetDependency */,
+			);
+			name = "DOS-MonsterTests";
+			productName = "DOS-MonsterTests";
+			productReference = 98F86A3D28D9962E005325AF /* DOS-MonsterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		98F86A4628D9962E005325AF /* DOS-MonsterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98F86A5728D9962E005325AF /* Build configuration list for PBXNativeTarget "DOS-MonsterUITests" */;
+			buildPhases = (
+				5AB7C343FB1F0ECC114DC1BA /* [CP] Check Pods Manifest.lock */,
+				98F86A4328D9962E005325AF /* Sources */,
+				98F86A4428D9962E005325AF /* Frameworks */,
+				98F86A4528D9962E005325AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98F86A4928D9962E005325AF /* PBXTargetDependency */,
+			);
+			name = "DOS-MonsterUITests";
+			productName = "DOS-MonsterUITests";
+			productReference = 98F86A4728D9962E005325AF /* DOS-MonsterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		98F86A1F28D9962B005325AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					98F86A2628D9962B005325AF = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					98F86A3C28D9962E005325AF = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 98F86A2628D9962B005325AF;
+					};
+					98F86A4628D9962E005325AF = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 98F86A2628D9962B005325AF;
+					};
+				};
+			};
+			buildConfigurationList = 98F86A2228D9962B005325AF /* Build configuration list for PBXProject "DOS-Monster" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 98F86A1E28D9962B005325AF;
+			productRefGroup = 98F86A2828D9962B005325AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				98F86A2628D9962B005325AF /* DOS-Monster */,
+				98F86A3C28D9962E005325AF /* DOS-MonsterTests */,
+				98F86A4628D9962E005325AF /* DOS-MonsterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		98F86A2528D9962B005325AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98F86A3728D9962E005325AF /* LaunchScreen.storyboard in Resources */,
+				98F86A3428D9962E005325AF /* Assets.xcassets in Resources */,
+				9813C8CB28DAB48100FDD8F9 /* DungGeunMo.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98F86A3B28D9962E005325AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98F86A4528D9962E005325AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B2A246315D4D5A61C6F1C81 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DOS-Monster-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4402B0F43E819BCA2D2132EA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DOS-MonsterTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5AB7C343FB1F0ECC114DC1BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DOS-Monster-DOS-MonsterUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98F86A5A28D99958005325AF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		98F86A2328D9962B005325AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+<<<<<<< HEAD
+				1EF314F528E2FB1D00207E1C /* Date+Extension.swift in Sources */,
+=======
+				981A1F2528E2D1F0009232C6 /* GameViewController.swift in Sources */,
+>>>>>>> DOS-2-main-uiux
+				98F86A2F28D9962B005325AF /* ViewController.swift in Sources */,
+				98F86A2B28D9962B005325AF /* AppDelegate.swift in Sources */,
+				1EF314FF28E2FB8900207E1C /* LevelType.swift in Sources */,
+				98F86A2D28D9962B005325AF /* SceneDelegate.swift in Sources */,
+				1EF314F228E2FAC900207E1C /* Logger.swift in Sources */,
+				1EF3150228E2FBCB00207E1C /* PetResponse.swift in Sources */,
+				1EF314FD28E2FB6A00207E1C /* Pet.swift in Sources */,
+				1EF3150528E2FC2C00207E1C /* Constant.swift in Sources */,
+				1EF314F928E2FB5200207E1C /* Food.swift in Sources */,
+				1EF314FB28E2FB5C00207E1C /* Behavior.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98F86A3928D9962E005325AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98F86A4228D9962E005325AF /* DOS_MonsterTests.swift in Sources */,
+				1EF3150928E3029600207E1C /* DOS_MonsterPetTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98F86A4328D9962E005325AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98F86A4E28D9962E005325AF /* DOS_MonsterUITestsLaunchTests.swift in Sources */,
+				98F86A4C28D9962E005325AF /* DOS_MonsterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		98F86A3F28D9962E005325AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98F86A2628D9962B005325AF /* DOS-Monster */;
+			targetProxy = 98F86A3E28D9962E005325AF /* PBXContainerItemProxy */;
+		};
+		98F86A4928D9962E005325AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98F86A2628D9962B005325AF /* DOS-Monster */;
+			targetProxy = 98F86A4828D9962E005325AF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		98F86A3528D9962E005325AF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98F86A3628D9962E005325AF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		98F86A4F28D9962E005325AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		98F86A5028D9962E005325AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		98F86A5228D9962E005325AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A711F090BF7C10AFD9696130 /* Pods-DOS-Monster.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MPN6WL3W3U;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "DOS-Monster/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.roma.DOS-Monster";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = RetryDevelop;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		98F86A5328D9962E005325AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51B52B27631D69F8D20B2B86 /* Pods-DOS-Monster.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MPN6WL3W3U;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "DOS-Monster/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.roma.DOS-Monster";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = RetryAdHoc2;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		98F86A5528D9962E005325AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EA111307831C8C0606A0D52 /* Pods-DOS-MonsterTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.roma.DOS-MonsterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DOS-Monster.app/DOS-Monster";
+			};
+			name = Debug;
+		};
+		98F86A5628D9962E005325AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEB3CE32743358227A99071C /* Pods-DOS-MonsterTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.roma.DOS-MonsterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DOS-Monster.app/DOS-Monster";
+			};
+			name = Release;
+		};
+		98F86A5828D9962E005325AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4C7D1358CD0C901A8610ABE /* Pods-DOS-Monster-DOS-MonsterUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.roma.DOS-MonsterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "DOS-Monster";
+			};
+			name = Debug;
+		};
+		98F86A5928D9962E005325AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1EE029B4757C6354C05A3CD /* Pods-DOS-Monster-DOS-MonsterUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.roma.DOS-MonsterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "DOS-Monster";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		98F86A2228D9962B005325AF /* Build configuration list for PBXProject "DOS-Monster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98F86A4F28D9962E005325AF /* Debug */,
+				98F86A5028D9962E005325AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98F86A5128D9962E005325AF /* Build configuration list for PBXNativeTarget "DOS-Monster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98F86A5228D9962E005325AF /* Debug */,
+				98F86A5328D9962E005325AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98F86A5428D9962E005325AF /* Build configuration list for PBXNativeTarget "DOS-MonsterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98F86A5528D9962E005325AF /* Debug */,
+				98F86A5628D9962E005325AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98F86A5728D9962E005325AF /* Build configuration list for PBXNativeTarget "DOS-MonsterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98F86A5828D9962E005325AF /* Debug */,
+				98F86A5928D9962E005325AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 98F86A1F28D9962B005325AF /* Project object */;
+}
