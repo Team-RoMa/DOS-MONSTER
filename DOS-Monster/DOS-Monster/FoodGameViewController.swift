@@ -78,23 +78,31 @@ class GameScene: SKScene {
         player.position = CGPoint(x: size.width * 0.5, y: 40/2)
         addChild(player)
         
-        
-        
-//        run(SKAction.repeatForever(
-//          SKAction.sequence([
-//            SKAction.run(addFood),
-//            SKAction.wait(forDuration: 1.0)
-//          ])
-//        ))
+        run(SKAction.repeatForever(
+            SKAction.sequence([
+                SKAction.run(addFood),
+                SKAction.wait(forDuration: 1.0)
+            ])
+        ))
     }
     
-//    func addFood() {
-//        let foodSize = CGSize(width: 40, height: 40)
-//        let food = SKSpriteNode(color: .blue, size: foodSize)
-//
-//        // 노드에 중력이 적용되어 위에서 아래로 떨어짐
-////        food.physicsBody = SKPhysicsBody(rectangleOf: foodSize)
-//        food.position = CGPoint(x: size.width / 2, y: size.height)
-//        addChild(food)
-//    }
+    func addFood() {
+        let foodSize = CGSize(width: 40, height: 40)
+        let food = SKSpriteNode(color: .blue, size: foodSize)
+        
+        
+        let randomX = CGFloat.random(in: (foodSize.width/2)...(size.width - foodSize.width/2))
+        food.position = CGPoint(x: randomX, y: size.height)
+        addChild(food)
+        
+        let randomDuration = CGFloat.random(in: 2.0...4.0)
+        
+        let actionMove = SKAction
+            .move(
+                to: CGPoint(x: randomX, y: -foodSize.height),
+                duration: TimeInterval(randomDuration)
+            )
+        let actionMoveDone = SKAction.removeFromParent()
+        food.run(SKAction.sequence([actionMove, actionMoveDone]))
+    }
 }
