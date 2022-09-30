@@ -9,7 +9,7 @@ import UIKit
 import SpriteKit
 
 class FoodGameViewController: UIViewController {
-
+    
     private lazy var skView = SKView()
     
     override func viewDidLoad() {
@@ -21,7 +21,7 @@ class FoodGameViewController: UIViewController {
         view.addSubview(skView)
         let size = CGSize(width: view.frame.width, height: view.frame.height * 0.84)
         skView.frame.size = size
-
+        
         let scene = GameScene(size: skView.frame.size)
         scene.scaleMode = .resizeFill
         skView.showsFPS = true
@@ -46,9 +46,8 @@ class FoodGameViewController: UIViewController {
         ])
     }
     
-    
     override var prefersStatusBarHidden: Bool {
-      return true
+        return true
     }
     
     private let moveLeftButton: UIButton = {
@@ -57,7 +56,7 @@ class FoodGameViewController: UIViewController {
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
- 
+    
     private let moveRightButton: UIButton = {
         let button = UIButton()
         button.setImage(UIImage(systemName: "chevron.right.square.fill"), for: .normal)
@@ -70,14 +69,45 @@ class FoodGameViewController: UIViewController {
 // MARK: - GameScene
 class GameScene: SKScene {
     
+    private let player = SKSpriteNode(color: .red, size: CGSize(width: 40, height: 40))
+    private let leftButton = SKSpriteNode(color: .green, size: CGSize(width: 60, height: 60))
+    private let rightButton = SKSpriteNode(color: .green, size: CGSize(width: 60, height: 60))
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        guard let touch = touches.first else {
+            return
+        }
+        let positionInScene = touch.location(in: self)
+        let node = self.atPoint(positionInScene)
+        if node.name == "left" {
+            movePlayer(nodeKey: "left", moveBy: -40)
+        } else if node.name == "right" {
+            movePlayer(nodeKey: "right", moveBy: 40)
+        }
+    }
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        player.removeAction(forKey: "left")
+        player.removeAction(forKey: "right")
+    }
+    
     override func didMove(to view: SKView) {
         self.backgroundColor = SKColor.white
         
-        let playerSize = CGSize(width: 40, height: 40)
-        let player = SKSpriteNode(color: .red, size: playerSize)
+        // button
+        leftButton.name = "left"
+        leftButton.position = CGPoint(x: 30, y: 30)
+        addChild(leftButton)
+        
+        rightButton.name = "right"
+        rightButton.position = CGPoint(x: size.width - 30, y: 30)
+        addChild(rightButton)
+        
+        // player
         player.position = CGPoint(x: size.width * 0.5, y: 40/2)
         addChild(player)
         
+        // food
         run(SKAction.repeatForever(
             SKAction.sequence([
                 SKAction.run(addFood),
@@ -86,10 +116,16 @@ class GameScene: SKScene {
         ))
     }
     
+    private func movePlayer(nodeKey: String, moveBy: CGFloat) {
+        let moveAction = SKAction.moveBy(x: moveBy, y: 0, duration: 1)
+        let repeatForever = SKAction.repeatForever(moveAction)
+        let sequence = SKAction.sequence([moveAction, repeatForever])
+        player.run(sequence, withKey: nodeKey)
+    }
+    
     func addFood() {
         let foodSize = CGSize(width: 40, height: 40)
         let food = SKSpriteNode(color: .blue, size: foodSize)
-        
         
         let randomX = CGFloat.random(in: (foodSize.width/2)...(size.width - foodSize.width/2))
         food.position = CGPoint(x: randomX, y: size.height)
