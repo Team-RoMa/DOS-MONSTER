@@ -78,8 +78,8 @@ class GameScene: SKScene {
     private var obstaclePassed = 0
     
     private let player = SKSpriteNode(color: .red, size: CGSize(width: 40, height: 40))
-    private let leftButton = SKSpriteNode(color: .green, size: CGSize(width: 60, height: 60))
-    private let rightButton = SKSpriteNode(color: .green, size: CGSize(width: 60, height: 60))
+    private let leftButton = SKSpriteNode(imageNamed: "arrow_left")
+    private let rightButton = SKSpriteNode(imageNamed: "arrow_right")
     private let scoreLabel = SKLabelNode(fontNamed: "DungGeunMo")
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -113,11 +113,10 @@ class GameScene: SKScene {
         leftButton.name = "left"
         leftButton.position = CGPoint(x: 30, y: 30)
         addChild(leftButton)
-        
+
         rightButton.name = "right"
         rightButton.position = CGPoint(x: size.width - 30, y: 30)
         addChild(rightButton)
-        
         
         // 1.충돌감지를 위해 환경설정
         physicsWorld.gravity = .zero
@@ -150,8 +149,8 @@ class GameScene: SKScene {
     }
     
     func addObstacle() {
-        let obstacleSize = CGSize(width: 40, height: 40)
-        let obstacle = SKSpriteNode(color: .blue, size: obstacleSize)
+        let obstacle = SKSpriteNode(imageNamed: "skype_alien")
+        let obstacleSize = obstacle.size
         
         // 충돌체크를 위한 코드
         obstacle.physicsBody = SKPhysicsBody(rectangleOf: obstacleSize)
