@@ -75,10 +75,12 @@ class FoodGameViewController: UIViewController {
 
 // MARK: - GameScene
 class GameScene: SKScene {
+    private var obstaclePassed = 0
     
     private let player = SKSpriteNode(color: .red, size: CGSize(width: 40, height: 40))
     private let leftButton = SKSpriteNode(color: .green, size: CGSize(width: 60, height: 60))
     private let rightButton = SKSpriteNode(color: .green, size: CGSize(width: 60, height: 60))
+    private let scoreLabel = SKLabelNode(fontNamed: "DungGeunMo")
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         guard let touch = touches.first else {
@@ -101,7 +103,13 @@ class GameScene: SKScene {
     override func didMove(to view: SKView) {
         self.backgroundColor = SKColor.white
         
-        // button
+        scoreLabel.text = "0000"
+        scoreLabel.fontSize = 18
+        scoreLabel.fontColor = SKColor.black
+        scoreLabel.position = CGPoint(x: 60, y: size.height - 60)
+        addChild(scoreLabel)
+        
+        // buttons
         leftButton.name = "left"
         leftButton.position = CGPoint(x: 30, y: 30)
         addChild(leftButton)
@@ -125,11 +133,10 @@ class GameScene: SKScene {
         player.physicsBody?.collisionBitMask = PhysicsCategory.none
         player.physicsBody?.usesPreciseCollisionDetection = true
         
-        
-        // food
+        // obstacle
         run(SKAction.repeatForever(
             SKAction.sequence([
-                SKAction.run(addFood),
+                SKAction.run(addObstacle),
                 SKAction.wait(forDuration: 1.0)
             ])
         ))
@@ -142,33 +149,38 @@ class GameScene: SKScene {
         player.run(sequence, withKey: nodeKey)
     }
     
-    func addFood() {
-        let foodSize = CGSize(width: 40, height: 40)
-        let food = SKSpriteNode(color: .blue, size: foodSize)
+    func addObstacle() {
+        let obstacleSize = CGSize(width: 40, height: 40)
+        let obstacle = SKSpriteNode(color: .blue, size: obstacleSize)
         
         // 충돌체크를 위한 코드
-        food.physicsBody = SKPhysicsBody(rectangleOf: foodSize)
+        obstacle.physicsBody = SKPhysicsBody(rectangleOf: obstacleSize)
         // 물리엔진이 food의 움직임을 제어하지 않게 한다
-        food.physicsBody?.isDynamic = true
-        food.physicsBody?.categoryBitMask = PhysicsCategory.obstacle
+        obstacle.physicsBody?.isDynamic = true
+        obstacle.physicsBody?.categoryBitMask = PhysicsCategory.obstacle
         // 이 객체와 부딪혔을떄 contact listener 에게 알려야 하는 객체의 category
-        food.physicsBody?.contactTestBitMask = PhysicsCategory.player
+        obstacle.physicsBody?.contactTestBitMask = PhysicsCategory.player
         // 서로를 튕기게 하지 않고 통과하게 하고싶으므로 none 으로 설정
-        food.physicsBody?.collisionBitMask = PhysicsCategory.none
+        obstacle.physicsBody?.collisionBitMask = PhysicsCategory.none
         
-        let randomX = CGFloat.random(in: (foodSize.width/2)...(size.width - foodSize.width/2))
-        food.position = CGPoint(x: randomX, y: size.height)
-        addChild(food)
+        let randomX = CGFloat.random(in: (obstacleSize.width/2)...(size.width - obstacleSize.width/2))
+        obstacle.position = CGPoint(x: randomX, y: size.height)
+        addChild(obstacle)
         
         let randomDuration = CGFloat.random(in: 2.0...4.0)
         
         let actionMove = SKAction
             .move(
-                to: CGPoint(x: randomX, y: -foodSize.height),
+                to: CGPoint(x: randomX, y: -obstacleSize.height),
                 duration: TimeInterval(randomDuration)
             )
         let actionMoveDone = SKAction.removeFromParent()
-        food.run(SKAction.sequence([actionMove, actionMoveDone]))
+        let updateScore = SKAction.run { [weak self] in
+            guard let `self` = self else { return }
+            self.obstaclePassed += 1
+            self.scoreLabel.text = "\(self.obstaclePassed)"
+        }
+        obstacle.run(SKAction.sequence([actionMove, actionMoveDone, updateScore]))
     }
 }
 
@@ -197,9 +209,41 @@ extension GameScene: SKPhysicsContactDelegate {
     }
     
     func foodDidCollideWithPlayer(food: SKSpriteNode, player: SKSpriteNode) {
-        print("Hit")
-        // TODO: - 게임 종료
         food.removeFromParent()
+        
+        let reveal = SKTransition.flipHorizontal(withDuration: 0.5)
+        let gameOverScene = GameOverScene(size: self.size, score: self.obstaclePassed)
+        view?.presentScene(gameOverScene, transition: reveal)
     }
 }
 
+// MARK: - GameOverScene
+class GameOverScene: SKScene {
+  init(size: CGSize, score: Int) {
+    super.init(size: size)
+    
+    backgroundColor = SKColor.white
+      let message = "SCORE: \(score)"
+    
+    let label = SKLabelNode(fontNamed: "DungGeunMo")
+    label.text = message
+    label.fontSize = 40
+    label.fontColor = SKColor.black
+    label.position = CGPoint(x: size.width/2, y: size.height/2)
+    addChild(label)
+    
+    run(SKAction.sequence([
+      SKAction.wait(forDuration: 3.0),
+      SKAction.run { [weak self] in
+        guard let `self` = self else { return }
+        let reveal = SKTransition.flipHorizontal(withDuration: 0.5)
+        let scene = GameScene(size: size)
+        self.view?.presentScene(scene, transition: reveal)
+      }
+      ]))
+   }
+  
+  required init(coder aDecoder: NSCoder) {
+    fatalError("init(coder:) has not been implemented")
+  }
+}
