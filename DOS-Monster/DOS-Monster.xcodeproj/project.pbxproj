@@ -56,6 +56,7 @@
 		516AFF958BB3D3F96EA08612 /* Pods_DOS_Monster_DOS_MonsterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B6618C21455A27186489173 /* Pods_DOS_Monster_DOS_MonsterUITests.framework */; };
 		9813C8CB28DAB48100FDD8F9 /* DungGeunMo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9813C8CA28DAB48000FDD8F9 /* DungGeunMo.ttf */; };
 		981A1F2528E2D1F0009232C6 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981A1F2428E2D1F0009232C6 /* GameViewController.swift */; };
+		98427F6C28E5A35200EFCF6C /* FoodGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98427F6B28E5A35200EFCF6C /* FoodGameViewController.swift */; };
 		98CE2DBE28E323A900DF7685 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CE2DBD28E323A800DF7685 /* ColorPalette.swift */; };
 		98CE2DC028E323FC00DF7685 /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CE2DBF28E323FC00DF7685 /* RootTabBarController.swift */; };
 		98CE2DC228E3243300DF7685 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CE2DC128E3243300DF7685 /* UIFont+Extension.swift */; };
@@ -136,6 +137,7 @@
 		6EA111307831C8C0606A0D52 /* Pods-DOS-MonsterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DOS-MonsterTests.debug.xcconfig"; path = "Target Support Files/Pods-DOS-MonsterTests/Pods-DOS-MonsterTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9813C8CA28DAB48000FDD8F9 /* DungGeunMo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DungGeunMo.ttf; sourceTree = "<group>"; };
 		981A1F2428E2D1F0009232C6 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		98427F6B28E5A35200EFCF6C /* FoodGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodGameViewController.swift; sourceTree = "<group>"; };
 		98CE2DBD28E323A800DF7685 /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
 		98CE2DBF28E323FC00DF7685 /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
 		98CE2DC128E3243300DF7685 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
@@ -343,6 +345,7 @@
 				98F86A2E28D9962B005325AF /* HomeViewController.swift */,
 				1E56932F28EBD1AE00DB0CFF /* HomeViewModel.swift */,
 				981A1F2428E2D1F0009232C6 /* GameViewController.swift */,
+				98427F6B28E5A35200EFCF6C /* FoodGameViewController.swift */,
 				98F86A3328D9962E005325AF /* Assets.xcassets */,
 				98F86A3528D9962E005325AF /* LaunchScreen.storyboard */,
 				98F86A3828D9962E005325AF /* Info.plist */,
@@ -672,6 +675,7 @@
 				1E6A579B28FC5E5000B31895 /* AppCoordinator.swift in Sources */,
 				1E56932A28EBD12900DB0CFF /* FoodCollectionViewCell.swift in Sources */,
 				1E6A570B28F82FDC00B31895 /* UserDefaults+Extension.swift in Sources */,
+				98427F6C28E5A35200EFCF6C /* FoodGameViewController.swift in Sources */,
 				1EF314F228E2FAC900207E1C /* Logger.swift in Sources */,
 				1E5712AA28F64DA4007A796A /* DataManager+Food.swift in Sources */,
 				1E56932328EBD0D300DB0CFF /* MVVMInterface.swift in Sources */,
