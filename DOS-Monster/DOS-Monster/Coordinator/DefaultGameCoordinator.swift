@@ -18,8 +18,10 @@ final class DefaultGameCoordinator: GameCoordinator {
     }
     
     func start() {
-        let gameViewController = GameViewController()
-        navigationController.setViewControllers([gameViewController], animated: true)
+        let gameViewController = FoodGameViewController()
+//        navigationController.setViewControllers([gameViewController], animated: true)
+//        navigationController.present(gameViewController, animated: true)
+        navigationController.pushViewController(gameViewController, animated: true)
         tabBarController.addViewController(navigationController, animated: true)
     }
 }

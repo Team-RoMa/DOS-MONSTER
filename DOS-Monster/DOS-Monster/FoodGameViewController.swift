@@ -19,64 +19,46 @@ class FoodGameViewController: UIViewController {
     
     private lazy var skView = SKView()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        view.backgroundColor = .gray
-        skView.backgroundColor = .yellow
-        
-        view.addSubview(skView)
-        let size = CGSize(width: view.frame.width, height: view.frame.height * 0.84)
-        skView.frame.size = size
-        
-        let scene = GameScene(size: skView.frame.size)
-        scene.scaleMode = .resizeFill
-        skView.showsFPS = true
-        skView.showsNodeCount = true
-        skView.ignoresSiblingOrder = true
-        skView.presentScene(scene)
-        
-        setupViews()
+    init() {
+        super.init(nibName: nil, bundle: nil)
+        tabBarItem = UITabBarItem(title: "Game", image: UIImage(systemName: "pencil"), tag: 1)
     }
     
-    private func setupViews() {
-        let stackView = UIStackView(arrangedSubviews: [moveLeftButton, moveRightButton])
-        stackView.translatesAutoresizingMaskIntoConstraints = false
-        stackView.distribution = .fillProportionally
-        stackView.alignment = .center
-        view.addSubview(stackView)
+    @available(*, unavailable)
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.addSubview(skView)
         
-        NSLayoutConstraint.activate([
-            stackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
-            stackView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            stackView.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.94)
-        ])
+        skView.translatesAutoresizingMaskIntoConstraints = false
+        skView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        skView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
+        skView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor).isActive = true
+        skView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor).isActive = true
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        let scene = GameScene(size: skView.frame.size)
+        scene.scaleMode = .resizeFill
+        skView.presentScene(scene)
+        print(skView.frame.size)
     }
     
     override var prefersStatusBarHidden: Bool {
         return true
     }
-    
-    private let moveLeftButton: UIButton = {
-        let button = UIButton()
-        button.setImage(UIImage(systemName: "chevron.left.square.fill"), for: .normal)
-        button.translatesAutoresizingMaskIntoConstraints = false
-        return button
-    }()
-    
-    private let moveRightButton: UIButton = {
-        let button = UIButton()
-        button.setImage(UIImage(systemName: "chevron.right.square.fill"), for: .normal)
-        button.translatesAutoresizingMaskIntoConstraints = false
-        return button
-    }()
-    
 }
 
 // MARK: - GameScene
 class GameScene: SKScene {
     private var obstaclePassed = 0
     
+    // SKScene에 나타낼 수 있는 것은 모두 Node 형태
+    // addChild로 Node를 추가하면 화면에 보일 수 있음
     private let player = SKSpriteNode(color: .red, size: CGSize(width: 40, height: 40))
     private let leftButton = SKSpriteNode(imageNamed: "arrow_left")
     private let rightButton = SKSpriteNode(imageNamed: "arrow_right")
@@ -100,7 +82,7 @@ class GameScene: SKScene {
         player.removeAction(forKey: "right")
     }
     
-    override func didMove(to view: SKView) {
+    override func didMove(to view: SKView) { // 초기화코드
         self.backgroundColor = SKColor.white
         
         scoreLabel.text = "0000"
@@ -179,13 +161,14 @@ class GameScene: SKScene {
             self.obstaclePassed += 1
             self.scoreLabel.text = "\(self.obstaclePassed)"
         }
+        // 운석 하나 피했을 때 실행되는 시퀀스
         obstacle.run(SKAction.sequence([actionMove, actionMoveDone, updateScore]))
     }
 }
 
 extension GameScene: SKPhysicsContactDelegate {
     
-    func didBegin(_ contact: SKPhysicsContact) {
+    func didBegin(_ contact: SKPhysicsContact) { // 노드 간 충돌시 실행되는 delegate 메소드
         var firstBody: SKPhysicsBody
         var secondBody: SKPhysicsBody
         // 충돌하는 두개의 body 는 순서를 보장하지 않으므로, bitmask 에 의해 정렬하고
