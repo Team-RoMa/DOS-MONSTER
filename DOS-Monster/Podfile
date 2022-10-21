@@ -7,7 +7,9 @@ target 'DOS-Monster' do
 
   # Pods for DOS-Monster
   pod 'SwiftLint'
- 
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'RxAppState'
 
   target 'DOS-MonsterTests' do
     inherit! :search_paths

@@ -8,7 +8,9 @@
 import Foundation
 
 enum LevelConstant {
-    static let start: Int = 1
+    static let startExp = 0
+    static let start = 1
+    static let max = 100
 }
 
 enum FontNameConstant {

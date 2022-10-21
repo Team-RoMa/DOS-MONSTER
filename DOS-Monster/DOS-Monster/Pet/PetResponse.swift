@@ -7,9 +7,7 @@
 
 import Foundation
 
-enum PetResponse {
-    enum Level {
-        case up(increase: Int, newLevel: Int)
-        case alreadyMax
-    }
-}
+//enum PetResponse {
+//    case levelUp(increment: Int, newLevel: Int)
+//    case alreadyMax
+//}

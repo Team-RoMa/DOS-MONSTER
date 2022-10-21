@@ -1,0 +1,50 @@
+{
+    "data": [
+        {
+            "name": "Apple",
+            "satisfaction": 1,
+            "emoji": "🍎"
+        },
+        {
+            "name": "Banana",
+            "satisfaction": 1,
+            "emoji": "🍌"
+        },
+        {
+            "name": "Orange",
+            "satisfaction": 1,
+            "emoji": "🍊"
+        },
+        {
+            "name": "Grape",
+            "satisfaction": 2,
+            "emoji": "🍇"
+        },
+        {
+            "name": "Watermelon",
+            "satisfaction": 2,
+            "emoji": "🍉"
+        },
+        {
+            "name": "Melon",
+            "satisfaction": 2,
+            "emoji": "🍈"
+        },
+        {
+            "name": "Blueberry",
+            "satisfaction": 3,
+            "emoji": "🫐"
+        },
+        {
+            "name": "Kiwi",
+            "satisfaction": 3,
+            "emoji": "🥝"
+        },
+        {
+            "name": "Chicken",
+            "satisfaction": 4,
+            "emoji": "🍗"
+        }
+    ]
+}
+

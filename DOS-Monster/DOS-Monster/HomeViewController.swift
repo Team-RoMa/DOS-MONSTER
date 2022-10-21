@@ -5,26 +5,113 @@
 //  Created by Sujin Jin on 2022/09/20.
 //
 
-import UIKit
+import RxSwift
+import RxRelay
+import RxAppState
 
-class ViewController: UIViewController {
+extension UIStackView {
+    func addArrangedSubviews(_ views: [UIView]) {
+        views.forEach {
+            addArrangedSubview($0)
+        }
+    }
+}
+
+class HomeViewController: UIViewController, ViewType {
     
-    let pet = Pet(name: "임의의 펫이름")
+    private let disposeBag = DisposeBag()
+//    let pet = Pet(name: "임의의 펫이름")
+    
+    private lazy var feedButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("음식주기", for: .normal)
+        button.setTitleColor(UIColor.black, for: .normal)
+        return button
+    }()
+    
+    private lazy var petNameChangeButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("펫이름변경", for: .normal)
+        button.setTitleColor(UIColor.black, for: .normal)
+        return button
+    }()
+    
+    private let petNameLabel = UILabel()
+    
+    init() {
+        super.init(nibName: nil, bundle: nil)
+        tabBarItem = UITabBarItem(title: "Home", image: UIImage(systemName: "pencil"), tag: 0)
+//        navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    
+    @available(*, unavailable)
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = ColorPalette.background
-        
-        pet.updateSatietyLevel { satietyLevel in
-            satietyFigureLabel.text = "\(satietyLevel)"
-        }
-        
-        pet.updateClosenessLevel { closenessLevel in
-            satietyFigureLabel.text = "\(closenessLevel)"
-        }
-        
         setupViews()
+        
+//        pet.updateSatietyLevel { satietyLevel in
+//            satietyFigureLabel.text = "\(satietyLevel)"
+//        }
+//
+//        pet.updateClosenessLevel { closenessLevel in
+//            moodFigureLabel.text = "\(closenessLevel)"
+//        }
     }
+    
+    func bind(to viewModel: HomeViewModel) {
+        
+        // MARK: From ViewModel
+        
+//        navigationItem.title = "asd"
+        
+//        viewModel.state.loadedFoods.bind { [weak self] foodCountMap in
+//            let foodViewController = FoodViewController()
+//            let foodViewModel = FoodViewModel(foodCountMap: foodCountMap)
+//            foodViewController.viewModel = foodViewModel
+//            self?.bindFoodViewModel(foodViewModel)
+//            self?.present(foodViewController, animated: true)
+//        }.disposed(by: disposeBag)
+        
+        // MARK: To ViewModel
+        
+        let input = HomeViewModel.Input(
+            feedButtonDidTap: feedButton.rx.tap.asObservable(),
+            petNameChangeButtonDidTap: petNameChangeButton.rx.tap.asObservable()
+        )
+        
+        let output = viewModel.transform(from: input)
+        
+        output.petName
+            .bind(to: petNameLabel.rx.text)
+            .disposed(by: disposeBag)
+            
+        
+//        viewModel.state.presentFoodView.bind { [weak self] foodViewModel in
+//            let foodViewController = FoodViewController()
+//            foodViewController.viewModel = foodViewModel
+////            self?.bindFoodViewModel(foodViewModel)
+//            self?.present(foodViewController, animated: true)
+//        }
+//        .disposed(by: disposeBag)
+//
+//        viewModel.state.petName
+//            .bind(to: petNameLabel.rx.text)
+//            .disposed(by: disposeBag)
+        
+        
+        
+    }
+    
+//    private func bindFoodViewModel(_ viewModel: FoodViewModel) {
+//        viewModel.action.exitButtonTapped.bind { [weak self] in
+//            self?.dismiss(animated: true)
+//        }.disposed(by: disposeBag)
+//    }
     
     private func setupViews() {
         let dateStackView = makeStackView(views: [dateLabel, dateCountLabel], axis: .vertical)
@@ -62,6 +149,27 @@ class ViewController: UIViewController {
             monsterView.widthAnchor.constraint(equalToConstant: 60),
             monsterView.heightAnchor.constraint(equalTo: monsterView.widthAnchor),
             monsterView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -50)
+        ])
+        
+        view.addSubview(feedButton)
+        feedButton.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            feedButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30),
+            feedButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -15)
+        ])
+        
+        view.addSubview(petNameChangeButton)
+        petNameChangeButton.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            petNameChangeButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30),
+            petNameChangeButton.bottomAnchor.constraint(equalTo: feedButton.topAnchor, constant: -15)
+        ])
+        
+        view.addSubview(petNameLabel)
+        petNameLabel.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            petNameLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 15),
+            petNameLabel.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -15)
         ])
     }
     

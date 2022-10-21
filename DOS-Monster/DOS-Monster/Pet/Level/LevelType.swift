@@ -15,7 +15,8 @@ extension LevelType {
     }
     
     var currentIndex: Int {
-        return allCases.firstIndex { $0.rawValue == rawValue } as? Int ?? 0
+//        return allCases.firstIndex { $0.rawValue == rawValue } as? Int ?? 0
+        return rawValue - (allCases.first?.rawValue ?? 0)
     }
     
     var minIndex: Int {
@@ -26,8 +27,20 @@ extension LevelType {
         return allCases.index(allCases.endIndex, offsetBy: -1) as? Int ?? 0
     }
     
-    var remainingUpside: Int {
+    var isMax: Bool {
+        return currentIndex == maxIndex
+    }
+    
+    var isMin: Bool {
+        return currentIndex == minIndex
+    }
+    
+    var indexUpside: Int {
         return maxIndex - currentIndex
+    }
+    
+    var indexDownside: Int {
+        return currentIndex - minIndex
     }
     
     func level(of index: Int) -> Self {
@@ -35,15 +48,27 @@ extension LevelType {
         return allCases[index]
     }
     
-    func raise(by index: Int) -> (newLevel: Self, increase: Int) {
-        let increase = min(index, remainingUpside)
-        let newLevel = level(of: currentIndex + increase)
-        return (newLevel, increase)
-    }
+//    func increase(by index: Int) -> Self {
+//        let increment = min(currentIndex + index, indexUpside)
+//        let newLevel = level(of: increment)
+//        return newLevel
+//    }
+//
+//    func decrease(by index: Int) -> Self {
+//        let decrement = max(currentIndex - index, indexDownside)
+//        let newLevel = level(of: decrement)
+//        return newLevel
+//    }
     
-    func lower(by index: Int) -> Self {
-        let downside = min(currentIndex, index)
-        let newLevel = level(of: currentIndex - downside)
-        return newLevel
+    func increase(by index: Int) -> (increment: Int, newLevel: Self) {
+        let increment = min(currentIndex + index, indexUpside)
+        let newLevel = level(of: increment)
+        return (increment, newLevel)
+    }
+
+    func decrease(by index: Int) -> (decrement: Int, newLevel: Self) {
+        let decrement = max(currentIndex - index, indexDownside)
+        let newLevel = level(of: decrement)
+        return (decrement, newLevel)
     }
 }

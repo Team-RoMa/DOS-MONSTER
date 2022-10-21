@@ -8,10 +8,45 @@
 
 /* Begin PBXBuildFile section */
 		1B604135597948CEF0B0BA46 /* Pods_DOS_Monster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE0027F3B23988006476FE7D /* Pods_DOS_Monster.framework */; };
+		1E56932128E54F2900DB0CFF /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E56932028E54F2900DB0CFF /* Observable.swift */; };
+		1E56932328EBD0D300DB0CFF /* MVVMInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E56932228EBD0D300DB0CFF /* MVVMInterface.swift */; };
+		1E56932628EBD10500DB0CFF /* FoodCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E56932528EBD10500DB0CFF /* FoodCollectionViewDataSource.swift */; };
+		1E56932828EBD11200DB0CFF /* FoodCollectionCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E56932728EBD11200DB0CFF /* FoodCollectionCellViewModel.swift */; };
+		1E56932A28EBD12900DB0CFF /* FoodCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E56932928EBD12900DB0CFF /* FoodCollectionViewCell.swift */; };
+		1E56932C28EBD14200DB0CFF /* FoodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E56932B28EBD14200DB0CFF /* FoodViewModel.swift */; };
+		1E56932E28EBD15200DB0CFF /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E56932D28EBD15200DB0CFF /* FoodViewController.swift */; };
+		1E56933028EBD1AE00DB0CFF /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E56932F28EBD1AE00DB0CFF /* HomeViewModel.swift */; };
+		1E56933228EC3EBB00DB0CFF /* FoodCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E56933128EC3EBB00DB0CFF /* FoodCollectionViewDelegate.swift */; };
+		1E57128428F59F30007A796A /* FoodDatabase.json in Resources */ = {isa = PBXBuildFile; fileRef = 1E57128328F59F30007A796A /* FoodDatabase.json */; };
+		1E57128628F5A15F007A796A /* JSONConvertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E57128528F5A15F007A796A /* JSONConvertService.swift */; };
+		1E5712A828F64D64007A796A /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5712A728F64D64007A796A /* DataManager.swift */; };
+		1E5712AA28F64DA4007A796A /* DataManager+Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5712A928F64DA4007A796A /* DataManager+Food.swift */; };
+		1E57F2AB2901285700F02367 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1E57F2A92901285700F02367 /* Model.xcdatamodeld */; };
+		1E57F2B829012AF100F02367 /* FoodMO+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E57F2B629012AF100F02367 /* FoodMO+CoreDataClass.swift */; };
+		1E68B84E28FD49940023FEF2 /* PetNameChangeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E68B84D28FD49940023FEF2 /* PetNameChangeViewModel.swift */; };
+		1E68B85028FDB86F0023FEF2 /* UITabBarController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E68B84F28FDB86F0023FEF2 /* UITabBarController+Extension.swift */; };
+		1E68B85228FE345C0023FEF2 /* DefaultHomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E68B85128FE345C0023FEF2 /* DefaultHomeCoordinator.swift */; };
+		1E68B85428FE346C0023FEF2 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E68B85328FE346C0023FEF2 /* HomeCoordinator.swift */; };
+		1E68B85628FE34930023FEF2 /* DefaultGameCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E68B85528FE34930023FEF2 /* DefaultGameCoordinator.swift */; };
+		1E68B85828FE349E0023FEF2 /* GameCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E68B85728FE349E0023FEF2 /* GameCoordinator.swift */; };
+		1E68B8622901098E0023FEF2 /* EntityConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E68B8612901098E0023FEF2 /* EntityConvertible.swift */; };
+		1E68B87C29010FD90023FEF2 /* ManagedObjectConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E68B87B29010FD90023FEF2 /* ManagedObjectConvertible.swift */; };
+		1E6A570B28F82FDC00B31895 /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6A570A28F82FDC00B31895 /* UserDefaults+Extension.swift */; };
+		1E6A575828F98FDF00B31895 /* PetNameChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6A575728F98FDF00B31895 /* PetNameChangeViewController.swift */; };
+		1E6A579328FC5DE300B31895 /* DefaultAppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6A579228FC5DE300B31895 /* DefaultAppCoordinator.swift */; };
+		1E6A579728FC5E0C00B31895 /* DefaultMainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6A579628FC5E0C00B31895 /* DefaultMainCoordinator.swift */; };
+		1E6A579B28FC5E5000B31895 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6A579A28FC5E5000B31895 /* AppCoordinator.swift */; };
+		1E6A579D28FC5E5D00B31895 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6A579C28FC5E5D00B31895 /* MainCoordinator.swift */; };
+		1E6A579F28FC5E7800B31895 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6A579E28FC5E7800B31895 /* Coordinator.swift */; };
+		1E767BC728F690C1001CB781 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E767BC628F690C1001CB781 /* UITextField+Extension.swift */; };
+		1E767BC928F69284001CB781 /* PetNameSetupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E767BC828F69284001CB781 /* PetNameSetupViewModel.swift */; };
+		1ECEB2E428F67B2C00E3ADF6 /* PetNameSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECEB2E328F67B2C00E3ADF6 /* PetNameSetupViewController.swift */; };
+		1ECEB2E728F684E600E3ADF6 /* NamingTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECEB2E628F684E600E3ADF6 /* NamingTextFieldDelegate.swift */; };
+		1EE173462902A3FF0044AAE5 /* BundleFileParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE173452902A3FF0044AAE5 /* BundleFileParser.swift */; };
 		1EF314F228E2FAC900207E1C /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF314F128E2FAC900207E1C /* Logger.swift */; };
 		1EF314F528E2FB1D00207E1C /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF314F428E2FB1D00207E1C /* Date+Extension.swift */; };
 		1EF314F928E2FB5200207E1C /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF314F828E2FB5200207E1C /* Food.swift */; };
-		1EF314FB28E2FB5C00207E1C /* Behavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF314FA28E2FB5C00207E1C /* Behavior.swift */; };
+		1EF314FB28E2FB5C00207E1C /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF314FA28E2FB5C00207E1C /* Action.swift */; };
 		1EF314FD28E2FB6A00207E1C /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF314FC28E2FB6A00207E1C /* Pet.swift */; };
 		1EF314FF28E2FB8900207E1C /* LevelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF314FE28E2FB8900207E1C /* LevelType.swift */; };
 		1EF3150228E2FBCB00207E1C /* PetResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF3150128E2FBCB00207E1C /* PetResponse.swift */; };
@@ -26,7 +61,7 @@
 		98CE2DC228E3243300DF7685 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CE2DC128E3243300DF7685 /* UIFont+Extension.swift */; };
 		98F86A2B28D9962B005325AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F86A2A28D9962B005325AF /* AppDelegate.swift */; };
 		98F86A2D28D9962B005325AF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F86A2C28D9962B005325AF /* SceneDelegate.swift */; };
-		98F86A2F28D9962B005325AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F86A2E28D9962B005325AF /* ViewController.swift */; };
+		98F86A2F28D9962B005325AF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F86A2E28D9962B005325AF /* HomeViewController.swift */; };
 		98F86A3428D9962E005325AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98F86A3328D9962E005325AF /* Assets.xcassets */; };
 		98F86A3728D9962E005325AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98F86A3528D9962E005325AF /* LaunchScreen.storyboard */; };
 		98F86A4228D9962E005325AF /* DOS_MonsterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F86A4128D9962E005325AF /* DOS_MonsterTests.swift */; };
@@ -52,10 +87,45 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E56932028E54F2900DB0CFF /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		1E56932228EBD0D300DB0CFF /* MVVMInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMInterface.swift; sourceTree = "<group>"; };
+		1E56932528EBD10500DB0CFF /* FoodCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCollectionViewDataSource.swift; sourceTree = "<group>"; };
+		1E56932728EBD11200DB0CFF /* FoodCollectionCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCollectionCellViewModel.swift; sourceTree = "<group>"; };
+		1E56932928EBD12900DB0CFF /* FoodCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCollectionViewCell.swift; sourceTree = "<group>"; };
+		1E56932B28EBD14200DB0CFF /* FoodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewModel.swift; sourceTree = "<group>"; };
+		1E56932D28EBD15200DB0CFF /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
+		1E56932F28EBD1AE00DB0CFF /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		1E56933128EC3EBB00DB0CFF /* FoodCollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCollectionViewDelegate.swift; sourceTree = "<group>"; };
+		1E57128328F59F30007A796A /* FoodDatabase.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FoodDatabase.json; sourceTree = "<group>"; };
+		1E57128528F5A15F007A796A /* JSONConvertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONConvertService.swift; sourceTree = "<group>"; };
+		1E5712A728F64D64007A796A /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		1E5712A928F64DA4007A796A /* DataManager+Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataManager+Food.swift"; sourceTree = "<group>"; };
+		1E57F2AA2901285700F02367 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		1E57F2B629012AF100F02367 /* FoodMO+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FoodMO+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		1E68B84D28FD49940023FEF2 /* PetNameChangeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetNameChangeViewModel.swift; sourceTree = "<group>"; };
+		1E68B84F28FDB86F0023FEF2 /* UITabBarController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabBarController+Extension.swift"; sourceTree = "<group>"; };
+		1E68B85128FE345C0023FEF2 /* DefaultHomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultHomeCoordinator.swift; sourceTree = "<group>"; };
+		1E68B85328FE346C0023FEF2 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		1E68B85528FE34930023FEF2 /* DefaultGameCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultGameCoordinator.swift; sourceTree = "<group>"; };
+		1E68B85728FE349E0023FEF2 /* GameCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCoordinator.swift; sourceTree = "<group>"; };
+		1E68B8612901098E0023FEF2 /* EntityConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityConvertible.swift; sourceTree = "<group>"; };
+		1E68B87B29010FD90023FEF2 /* ManagedObjectConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedObjectConvertible.swift; sourceTree = "<group>"; };
+		1E6A570A28F82FDC00B31895 /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
+		1E6A575728F98FDF00B31895 /* PetNameChangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetNameChangeViewController.swift; sourceTree = "<group>"; };
+		1E6A579228FC5DE300B31895 /* DefaultAppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAppCoordinator.swift; sourceTree = "<group>"; };
+		1E6A579628FC5E0C00B31895 /* DefaultMainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultMainCoordinator.swift; sourceTree = "<group>"; };
+		1E6A579A28FC5E5000B31895 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		1E6A579C28FC5E5D00B31895 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		1E6A579E28FC5E7800B31895 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		1E767BC628F690C1001CB781 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		1E767BC828F69284001CB781 /* PetNameSetupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetNameSetupViewModel.swift; sourceTree = "<group>"; };
+		1ECEB2E328F67B2C00E3ADF6 /* PetNameSetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetNameSetupViewController.swift; sourceTree = "<group>"; };
+		1ECEB2E628F684E600E3ADF6 /* NamingTextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamingTextFieldDelegate.swift; sourceTree = "<group>"; };
+		1EE173452902A3FF0044AAE5 /* BundleFileParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleFileParser.swift; sourceTree = "<group>"; };
 		1EF314F128E2FAC900207E1C /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		1EF314F428E2FB1D00207E1C /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		1EF314F828E2FB5200207E1C /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
-		1EF314FA28E2FB5C00207E1C /* Behavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Behavior.swift; sourceTree = "<group>"; };
+		1EF314FA28E2FB5C00207E1C /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		1EF314FC28E2FB6A00207E1C /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
 		1EF314FE28E2FB8900207E1C /* LevelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelType.swift; sourceTree = "<group>"; };
 		1EF3150128E2FBCB00207E1C /* PetResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetResponse.swift; sourceTree = "<group>"; };
@@ -72,7 +142,7 @@
 		98F86A2728D9962B005325AF /* DOS-Monster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DOS-Monster.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98F86A2A28D9962B005325AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98F86A2C28D9962B005325AF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		98F86A2E28D9962B005325AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		98F86A2E28D9962B005325AF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		98F86A3328D9962E005325AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98F86A3628D9962E005325AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		98F86A3828D9962E005325AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -117,9 +187,64 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E56932428EBD0F300DB0CFF /* Food */ = {
+			isa = PBXGroup;
+			children = (
+				1E56932528EBD10500DB0CFF /* FoodCollectionViewDataSource.swift */,
+				1E56933128EC3EBB00DB0CFF /* FoodCollectionViewDelegate.swift */,
+				1E56932728EBD11200DB0CFF /* FoodCollectionCellViewModel.swift */,
+				1E56932928EBD12900DB0CFF /* FoodCollectionViewCell.swift */,
+				1E56932B28EBD14200DB0CFF /* FoodViewModel.swift */,
+				1E56932D28EBD15200DB0CFF /* FoodViewController.swift */,
+			);
+			path = Food;
+			sourceTree = "<group>";
+		};
+		1E5712A228F64CEB007A796A /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				1E57F2B629012AF100F02367 /* FoodMO+CoreDataClass.swift */,
+				1E68B8612901098E0023FEF2 /* EntityConvertible.swift */,
+				1E68B87B29010FD90023FEF2 /* ManagedObjectConvertible.swift */,
+				1E57F2A92901285700F02367 /* Model.xcdatamodeld */,
+				1E5712A728F64D64007A796A /* DataManager.swift */,
+				1E5712A928F64DA4007A796A /* DataManager+Food.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		1E6A579128FC51E200B31895 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				1E6A579E28FC5E7800B31895 /* Coordinator.swift */,
+				1E6A579A28FC5E5000B31895 /* AppCoordinator.swift */,
+				1E6A579228FC5DE300B31895 /* DefaultAppCoordinator.swift */,
+				1E6A579C28FC5E5D00B31895 /* MainCoordinator.swift */,
+				1E6A579628FC5E0C00B31895 /* DefaultMainCoordinator.swift */,
+				1E68B85328FE346C0023FEF2 /* HomeCoordinator.swift */,
+				1E68B85128FE345C0023FEF2 /* DefaultHomeCoordinator.swift */,
+				1E68B85728FE349E0023FEF2 /* GameCoordinator.swift */,
+				1E68B85528FE34930023FEF2 /* DefaultGameCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		1ECEB2E528F684B100E3ADF6 /* PetName */ = {
+			isa = PBXGroup;
+			children = (
+				1ECEB2E328F67B2C00E3ADF6 /* PetNameSetupViewController.swift */,
+				1E767BC828F69284001CB781 /* PetNameSetupViewModel.swift */,
+				1ECEB2E628F684E600E3ADF6 /* NamingTextFieldDelegate.swift */,
+			);
+			path = PetName;
+			sourceTree = "<group>";
+		};
 		1EF314F028E2FABA00207E1C /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				1EE173452902A3FF0044AAE5 /* BundleFileParser.swift */,
+				1E56932228EBD0D300DB0CFF /* MVVMInterface.swift */,
+				1E56932028E54F2900DB0CFF /* Observable.swift */,
 				1EF314F128E2FAC900207E1C /* Logger.swift */,
 				98CE2DBD28E323A800DF7685 /* ColorPalette.swift */,
 			);
@@ -131,6 +256,9 @@
 			children = (
 				1EF314F428E2FB1D00207E1C /* Date+Extension.swift */,
 				98CE2DC128E3243300DF7685 /* UIFont+Extension.swift */,
+				1E767BC628F690C1001CB781 /* UITextField+Extension.swift */,
+				1E6A570A28F82FDC00B31895 /* UserDefaults+Extension.swift */,
+				1E68B84F28FDB86F0023FEF2 /* UITabBarController+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -150,7 +278,7 @@
 			isa = PBXGroup;
 			children = (
 				1EF314F828E2FB5200207E1C /* Food.swift */,
-				1EF314FA28E2FB5C00207E1C /* Behavior.swift */,
+				1EF314FA28E2FB5C00207E1C /* Action.swift */,
 			);
 			path = Interaction;
 			sourceTree = "<group>";
@@ -196,15 +324,24 @@
 		98F86A2928D9962B005325AF /* DOS-Monster */ = {
 			isa = PBXGroup;
 			children = (
+				1E6A579128FC51E200B31895 /* Coordinator */,
+				1E5712A228F64CEB007A796A /* CoreData */,
+				1E57128328F59F30007A796A /* FoodDatabase.json */,
+				1E57128528F5A15F007A796A /* JSONConvertService.swift */,
 				1EF3150328E2FC2000207E1C /* Constant */,
 				1EF314F028E2FABA00207E1C /* Util */,
 				1EF314F328E2FAF300207E1C /* Extension */,
 				1EF314F628E2FB2300207E1C /* Pet */,
 				9813C8CA28DAB48000FDD8F9 /* DungGeunMo.ttf */,
+				1E56932428EBD0F300DB0CFF /* Food */,
+				1ECEB2E528F684B100E3ADF6 /* PetName */,
 				98F86A2A28D9962B005325AF /* AppDelegate.swift */,
 				98F86A2C28D9962B005325AF /* SceneDelegate.swift */,
+				1E68B84D28FD49940023FEF2 /* PetNameChangeViewModel.swift */,
+				1E6A575728F98FDF00B31895 /* PetNameChangeViewController.swift */,
 				98CE2DBF28E323FC00DF7685 /* RootTabBarController.swift */,
-				98F86A2E28D9962B005325AF /* ViewController.swift */,
+				98F86A2E28D9962B005325AF /* HomeViewController.swift */,
+				1E56932F28EBD1AE00DB0CFF /* HomeViewModel.swift */,
 				981A1F2428E2D1F0009232C6 /* GameViewController.swift */,
 				98F86A3328D9962E005325AF /* Assets.xcassets */,
 				98F86A3528D9962E005325AF /* LaunchScreen.storyboard */,
@@ -266,6 +403,7 @@
 				98F86A2428D9962B005325AF /* Frameworks */,
 				98F86A2528D9962B005325AF /* Resources */,
 				98F86A5A28D99958005325AF /* ShellScript */,
+				3A81A71521947E9366CB79C0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -303,6 +441,7 @@
 				98F86A4328D9962E005325AF /* Sources */,
 				98F86A4428D9962E005325AF /* Frameworks */,
 				98F86A4528D9962E005325AF /* Resources */,
+				01A3B1F6C01A8239F4FA09A8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -364,6 +503,7 @@
 			files = (
 				98F86A3728D9962E005325AF /* LaunchScreen.storyboard in Resources */,
 				98F86A3428D9962E005325AF /* Assets.xcassets in Resources */,
+				1E57128428F59F30007A796A /* FoodDatabase.json in Resources */,
 				9813C8CB28DAB48100FDD8F9 /* DungGeunMo.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,6 +525,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		01A3B1F6C01A8239F4FA09A8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DOS-Monster-DOS-MonsterUITests/Pods-DOS-Monster-DOS-MonsterUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DOS-Monster-DOS-MonsterUITests/Pods-DOS-Monster-DOS-MonsterUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DOS-Monster-DOS-MonsterUITests/Pods-DOS-Monster-DOS-MonsterUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2B2A246315D4D5A61C6F1C81 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -405,6 +562,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A81A71521947E9366CB79C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DOS-Monster/Pods-DOS-Monster-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DOS-Monster/Pods-DOS-Monster-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DOS-Monster/Pods-DOS-Monster-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		4402B0F43E819BCA2D2132EA /* [CP] Check Pods Manifest.lock */ = {
@@ -475,21 +649,55 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E56932128E54F2900DB0CFF /* Observable.swift in Sources */,
+				1E6A579D28FC5E5D00B31895 /* MainCoordinator.swift in Sources */,
+				1E6A579F28FC5E7800B31895 /* Coordinator.swift in Sources */,
 				981A1F2528E2D1F0009232C6 /* GameViewController.swift in Sources */,
+				1E56932828EBD11200DB0CFF /* FoodCollectionCellViewModel.swift in Sources */,
+				1E68B85428FE346C0023FEF2 /* HomeCoordinator.swift in Sources */,
+				1E6A579328FC5DE300B31895 /* DefaultAppCoordinator.swift in Sources */,
 				98CE2DC028E323FC00DF7685 /* RootTabBarController.swift in Sources */,
 				1EF314F528E2FB1D00207E1C /* Date+Extension.swift in Sources */,
+				1E6A575828F98FDF00B31895 /* PetNameChangeViewController.swift in Sources */,
 				98CE2DC228E3243300DF7685 /* UIFont+Extension.swift in Sources */,
-				98F86A2F28D9962B005325AF /* ViewController.swift in Sources */,
+				1E767BC728F690C1001CB781 /* UITextField+Extension.swift in Sources */,
+				1E68B85228FE345C0023FEF2 /* DefaultHomeCoordinator.swift in Sources */,
+				98F86A2F28D9962B005325AF /* HomeViewController.swift in Sources */,
+				1ECEB2E428F67B2C00E3ADF6 /* PetNameSetupViewController.swift in Sources */,
 				98F86A2B28D9962B005325AF /* AppDelegate.swift in Sources */,
 				1EF314FF28E2FB8900207E1C /* LevelType.swift in Sources */,
+				1E68B85828FE349E0023FEF2 /* GameCoordinator.swift in Sources */,
+				1EE173462902A3FF0044AAE5 /* BundleFileParser.swift in Sources */,
 				98F86A2D28D9962B005325AF /* SceneDelegate.swift in Sources */,
+				1E6A579B28FC5E5000B31895 /* AppCoordinator.swift in Sources */,
+				1E56932A28EBD12900DB0CFF /* FoodCollectionViewCell.swift in Sources */,
+				1E6A570B28F82FDC00B31895 /* UserDefaults+Extension.swift in Sources */,
 				1EF314F228E2FAC900207E1C /* Logger.swift in Sources */,
+				1E5712AA28F64DA4007A796A /* DataManager+Food.swift in Sources */,
+				1E56932328EBD0D300DB0CFF /* MVVMInterface.swift in Sources */,
+				1E68B85628FE34930023FEF2 /* DefaultGameCoordinator.swift in Sources */,
+				1E68B8622901098E0023FEF2 /* EntityConvertible.swift in Sources */,
+				1E6A579728FC5E0C00B31895 /* DefaultMainCoordinator.swift in Sources */,
+				1E68B85028FDB86F0023FEF2 /* UITabBarController+Extension.swift in Sources */,
+				1E57F2B829012AF100F02367 /* FoodMO+CoreDataClass.swift in Sources */,
 				1EF3150228E2FBCB00207E1C /* PetResponse.swift in Sources */,
+				1E56932E28EBD15200DB0CFF /* FoodViewController.swift in Sources */,
 				1EF314FD28E2FB6A00207E1C /* Pet.swift in Sources */,
+				1E5712A828F64D64007A796A /* DataManager.swift in Sources */,
+				1E68B87C29010FD90023FEF2 /* ManagedObjectConvertible.swift in Sources */,
+				1E57F2AB2901285700F02367 /* Model.xcdatamodeld in Sources */,
+				1E767BC928F69284001CB781 /* PetNameSetupViewModel.swift in Sources */,
+				1E57128628F5A15F007A796A /* JSONConvertService.swift in Sources */,
+				1ECEB2E728F684E600E3ADF6 /* NamingTextFieldDelegate.swift in Sources */,
 				98CE2DBE28E323A900DF7685 /* ColorPalette.swift in Sources */,
 				1EF3150528E2FC2C00207E1C /* Constant.swift in Sources */,
+				1E68B84E28FD49940023FEF2 /* PetNameChangeViewModel.swift in Sources */,
+				1E56933228EC3EBB00DB0CFF /* FoodCollectionViewDelegate.swift in Sources */,
 				1EF314F928E2FB5200207E1C /* Food.swift in Sources */,
-				1EF314FB28E2FB5C00207E1C /* Behavior.swift in Sources */,
+				1EF314FB28E2FB5C00207E1C /* Action.swift in Sources */,
+				1E56932628EBD10500DB0CFF /* FoodCollectionViewDataSource.swift in Sources */,
+				1E56933028EBD1AE00DB0CFF /* HomeViewModel.swift in Sources */,
+				1E56932C28EBD14200DB0CFF /* FoodViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -830,6 +1038,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1E57F2A92901285700F02367 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1E57F2AA2901285700F02367 /* Model.xcdatamodel */,
+			);
+			currentVersion = 1E57F2AA2901285700F02367 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 98F86A1F28D9962B005325AF /* Project object */;
 }
